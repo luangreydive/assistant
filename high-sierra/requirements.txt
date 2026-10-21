@@ -1,0 +1,13 @@
+# Todas tienen wheels para macOS 10.13 Intel (no se compila nada).
+openai>=2.0
+python-dotenv>=1.0
+rapidfuzz>=3.6
+watchdog>=4.0
+numpy>=1.26,<2.4   # 2.4+ exige SSE4.2 (x86-64-v2): no anda en los Core 2 Duo
+sounddevice>=0.5
+cffi>=1.17,<2.1
+webrtcvad-wheels>=2.0.14
+certifi>=2024.2
+# Para vosk (que se instala aparte en iniciar.sh, con --no-deps)
+requests>=2.31
+tqdm>=4.66
